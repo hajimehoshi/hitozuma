@@ -1,0 +1,10 @@
+# coding: utf-8
+
+OPTIONS = {
+  channels: ["#test"],
+  host: 'irc.example.com',
+  port: 6667,
+  nick: 'hitozuma',
+  user: 'hitozuma',
+  real: 'master@example.com'
+}
