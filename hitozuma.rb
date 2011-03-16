@@ -32,9 +32,9 @@ class NBot < Net::IRC::Client
 
 end
 
-Process.daemon(true)
+#Process.daemon(true)
 
-NBot.new(OPTIONS['host'], OPTIONS['port'],
-         nick: OPTIONS['nick'],
-         user: OPTIONS['user'],
-         real: OPTIONS['real']).start
+NBot.new(OPTIONS[:host], OPTIONS[:port],
+         nick: OPTIONS[:nick],
+         user: OPTIONS[:user],
+         real: OPTIONS[:real]).start
