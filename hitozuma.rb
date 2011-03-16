@@ -6,7 +6,7 @@ require 'config.rb'
 class NBot < Net::IRC::Client
 
   def on_rpl_welcome(m)
-    OPTIONS['channels'].each do |channel|
+    OPTIONS[:channels].each do |channel|
       post(JOIN, channel)
     end
   end
