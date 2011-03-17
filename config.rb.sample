@@ -1,7 +1,9 @@
 # coding: utf-8
 
 OPTIONS = {
-  channels: ["#test"],
+  encode: Encoding::UTF_8,
+  channels: ["#test", "#test2"],
+  passes: [nil, "pass"],
   host: 'irc.example.com',
   port: 6667,
   nick: 'hitozuma',
